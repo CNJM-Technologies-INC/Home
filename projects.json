@@ -1,0 +1,16 @@
+[
+    {
+        "title": "E-commerce Platform",
+        "image": "./images/logo.png",
+        "description": "A fully-featured e-commerce platform with product management, shopping cart, and secure checkout.",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+        "howItWorks": "This platform uses React for the frontend, Node.js for the backend, MongoDB for data storage, and integrates with Stripe for payment processing. It features real-time inventory updates and personalized product recommendations."
+    },
+    {
+        "title": "AI-powered Chatbot",
+        "image": "./images/logo.png",
+        "description": "An intelligent chatbot that uses natural language processing to assist customers with inquiries and support.",
+        "technologies": ["Python", "TensorFlow", "Flask", "React"],
+        "howItWorks": "The chatbot uses a deep learning model trained on customer service data. It processes user input using NLP techniques and generates appropriate responses. The frontend is built with React, while the backend uses Flask to serve the AI model."
+    }
+]

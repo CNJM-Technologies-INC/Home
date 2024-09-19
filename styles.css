@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --text-color: #ecf0f1;
+    --background-color: #1a1a1a;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--background-color);
+  }
+  
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+  
+  header {
+      background-color: var(--primary-color);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+  }
+  
+  header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin: 0 10px;
+  }
+  
+  nav ul li a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+  
+  .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .hero-content {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 10px;
+      z-index: 1;
+  }
+  
+  .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+  }
+  
+  .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+  }
+  
+  section {
+      padding: 4rem 0;
+  }
+  
+  h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--accent-color);
+  }
+  
+  .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  
+  .service {
+      background-color: var(--secondary-color);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      width: calc(50% - 2rem);
+      transition: transform 0.3s ease;
+  }
+  
+  .service:hover {
+      transform: translateY(-5px);
+  }
+  
+  .service h3 {
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+  }
+  
+  .tech-stack {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  
+  .tech-item {
+      text-align: center;
+      margin: 1rem;
+  }
+  
+  .tech-item i {
+      font-size: 3rem;
+      color: var(--accent-color);
+  }
+  
+  .success-stories {
+      background-color: var(--secondary-color);
+  }
+  
+  .story {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+  }
+  
+  .story h3 {
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+  }
+  
+  footer {
+      background-color: var(--primary-color);
+      text-align: center;
+      padding: 2rem 0;
+  }
+  
+  .contact-info {
+      margin-top: 1rem;
+  }
+  
+  .contact-info p {
+      margin-bottom: 0.5rem;
+  }
+  
+  .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+  }
+  
+  .project-item {
+      background-color: var(--secondary-color);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+      transform: translateY(-5px);
+  }
+  
+  .project-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+  }
+  
+  .project-item-content {
+      padding: 1rem;
+  }
+  
+  .project-item h3 {
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+  }
+  
+  .project-item button {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .project-item button:hover {
+      background-color: #c0392b;
+  }
+  
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1001;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+      background-color: var(--secondary-color);
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid var(--accent-color);
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+  }
+  
+  .close {
+      color: var(--accent-color);
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #c0392b;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  #modal-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+      header .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+  
+      nav {
+          display: none;
+      }
+  
+      nav.active {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: var(--primary-color);
+      }
+  
+      nav.active ul {
+          flex-direction: column;
+      }
+  
+      nav.active ul li {
+          display: block;
+          margin: 0;
+          text-align: center;
+      }
+  
+      nav.active ul li a {
+          display: block;
+          padding: 1rem;
+      }
+  
+      .menu-toggle {
+          display: block;
+      }
+  
+      .service {
+          width: 100%;
+      }
+  }
+  /* Add these styles at the end of the file */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-member-content {
+    padding: 1rem;
+}
+
+.team-member h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+#cursor-follower {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.7;
+    transition: transform 0.1s ease;
+}

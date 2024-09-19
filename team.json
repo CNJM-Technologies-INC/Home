@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Njenga James Mwangi",
+        "role": "CEO & Founder",
+        "image": "./images/ceo.png"
+    },
+    {
+        "name": "Njenga James Mwangi",
+        "role": "CTO",
+        "image": "./images/ceo.png"
+    },
+    {
+        "name": "Njenga James Mwangi",
+        "role": "Lead Developer",
+        "image": "./images/ceo.png"
+    },
+    {
+        "name": "Njenga James Mwangi",
+        "role": "UX Designer",
+        "image": "./images/ceo.png"
+    }
+]

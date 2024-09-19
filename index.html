@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNJM Technologies Inc.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CNJM Technologies Inc.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tech-stack">Tech Stack</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">&#9776;</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Innovative Software Solutions for a Digital World</h2>
+            <p>We're not just another software company. We're problem solvers, innovators, and efficiency enthusiasts.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Welcome to Our Digital Revolution</h2>
+            <p>At CNJM Technologies Inc., our mission is to streamline your redundant activities and tackle complex challenges with elegant code solutions. We stand out by focusing on what truly matters: your unique challenges. We don't believe in one-size-fits-all solutions. Instead, we dive deep into understanding your specific needs and craft bespoke software that not only meets but exceeds your expectations.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>💻 Custom Software Development</h3>
+                    <p>Tailored solutions designed to address your specific business needs and challenges.</p>
+                </div>
+                <div class="service">
+                    <h3>⚙️ Process Automation</h3>
+                    <p>Streamline your workflows and increase efficiency with our intelligent automation solutions.</p>
+                </div>
+                <div class="service">
+                    <h3>📊 Data Analytics</h3>
+                    <p>Harness the power of your data with our advanced analytics and visualization tools.</p>
+                </div>
+                <div class="service">
+                    <h3>🧠 AI and Machine Learning</h3>
+                    <p>Leverage cutting-edge AI technologies to gain a competitive edge in your industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack">
+        <div class="container">
+            <h2>Technology Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Mobile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <!-- Team members will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="projects-grid">
+                <!-- Project items will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="success-stories" class="success-stories">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="story">
+                <h3>E-commerce Giant Transformation</h3>
+                <p>We helped a leading e-commerce company reduce their order processing time by 75% through intelligent automation and machine learning algorithms.</p>
+            </div>
+            <div class="story">
+                <h3>Healthcare Innovation</h3>
+                <p>Our custom software solution for a healthcare provider improved patient data management, resulting in a 40% increase in operational efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <p>📧 Email: cnjmtechnologiesinc@gmail.com</p>
+                <p>📱 Phone: +2547 41 593 506</p>
+            </div>
+            <p>Made by &copy; CNJM Technologies Inc.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Project Image">
+            <p id="modal-description"></p>
+            <h3>Technologies Used:</h3>
+            <ul id="modal-technologies"></ul>
+            <h3>How It Works:</h3>
+            <p id="modal-how-it-works"></p>
+        </div>
+    </div>
+    
+    <div id="cursor-follower"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
