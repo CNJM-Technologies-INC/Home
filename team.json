@@ -15,8 +15,18 @@
         "image": "./images/ceo.png"
     },
     {
-        "name": "Njenga James Mwangi",
+        "name": "Rachael Nasimiyu",
         "role": "UX Designer",
+        "image": "./images/ceo.png"
+    },
+    {
+        "name": "Denis Kimaiyo",
+        "role": "Human Resource and People Management",
+        "image": "./images/ceo.png"
+    },
+    {
+        "name": "Janet Ndanu",
+        "role": "Accounting And Finace Management",
         "image": "./images/ceo.png"
     }
 ]
