@@ -217,7 +217,10 @@
   .project-item button:hover {
       background-color: #c0392b;
   }
-  
+  #meet-ceo{
+    list-style-type: none;
+    color: white;
+  }
   .modal {
       display: none;
       position: fixed;
